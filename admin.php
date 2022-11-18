@@ -9,7 +9,8 @@
         die();
     }
     
-    //Vérifier si la session admin est bien sur vrai
+    //Vérifier si la session est sur false renvoyer 
+    //l'utilisateur à la connexion
     if(!$_SESSION['admin']) {
         header("Location: connexion.php");
         die();
