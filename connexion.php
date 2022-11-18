@@ -3,9 +3,9 @@
     //donc obligatoir pour sauvegarder la connection
     session_start();
     
-    //Si l'utilisateur est connecter le renvoyer à l'accueil
+    //Si l'utilisateur est connecter le renvoyer à la page admin
     if(isset($_SESSION['admin'])) {
-        header("Location: index.php");
+        header("Location: admin.php");
         die();
     }
 
